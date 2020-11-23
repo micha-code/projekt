@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function initialize() {
+        var earth = new WE.map('earth_div');
+        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors',
+        }).addTo(earth);
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>No stress travel guide</title>
+  </head>
+  <section>
+    <div class="header">
+      <header id="header" class="header">
+        <h1>No stress Travels!</h1>
+        <p>Living life as an adventure</p>
+      </header>
+    </div>
+  </section>
+  <section class="intro">
+    <h2>Where is your next adventure taking you?</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequatur beatae, illo quia unde amet nobis, repudiandae libero veritatis voluptates numquam est ex reiciendis dolores consequuntur praesentium tenetur. Odio quia ab nam odit doloribus at, optio soluta aut eaque quidem id fugiat, impedit voluptatibus? Sunt in laborum nemo nostrum eos sed. Harum eligendi nihil, culpa id, impedit aliquam velit perspiciatis tenetur officia voluptas accusantium sit facere illo similique et labore. Dolore animi eum dolorum vel repellendus corrupti fugiat dolor magni possimus ratione, iure sequi facere iste doloremque velit hic enim perferendis consequuntur assumenda tempore tempora eaque! Error animi necessitatibus voluptates!</p>
+    <div>
+      <button>Select country</button>
+      <button>Select category</button>
+    </div>
+  </section>
+
+  <body onload="initialize()">
+    <div id="earth_div"></div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+#earth_div {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*position: absolute !important;*/
+}
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy coral 
+#98bfad - na zvyrazneni 
+#ffc4b2 - coral light na pozadi 
+#ffc4b241 - polopruhledne pozadi pod sekci 
+#694a52 - pozadi navigace + border vizitka fotka 
+*/
+
+h1 {
+  position: relative;
+  font-family: 'Sail', cursive;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  margin: 20px;
+}
+
+h2 {
+  position: relative;
+  font-family: 'Sail', cursive;
+  font-size: 38px;
+  text-align: center;
+  color: #98bfad;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  /*display: flex;
+  align-items: center;
+  justify-content: ;
+  flex-direction: column;*/
+  background-image: url(../images/mountain1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*.header::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+*/
+
+.intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background-color: #98bfad;
+}
