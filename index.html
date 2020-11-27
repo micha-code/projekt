@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="http://www.webglearth.com/v2/api.js"></script>
-    <script>
-      function initialize() {
-        var earth = new WE.map('earth_div');
-        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '© OpenStreetMap contributors',
-        }).addTo(earth);
-      }
-    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sail&display=swap"
       rel="stylesheet"
@@ -17,21 +8,21 @@
     <link rel="stylesheet" href="style.css" />
     <title>No stress travel guide</title>
   </head>
-  <section>
-    <div class="header">
-      <header id="header" class="header">
-        <h1>No stress Travels!</h1>
-        <p>Living life as an adventure</p>
-      </header>
-    </div>
-  </section>
-  <section class="intro">
-    <h2>Where is your next adventure taking you?</h2>
-    <p> New platform for sharing travelling tips and tricks between adventurous girls is coming up soon! </p>
-
-  </section>
-
-  <body onload="initialize()">
-    <div id="earth_div"></div>
+  <body>
+    <section>
+      <div class="header">
+        <header id="header" class="header">
+          <h1>No stress Travels!</h1>
+          <p>Living life as an adventure</p>
+        </header>
+      </div>
+    </section>
+    <section class="intro">
+      <h2>Where is your next adventure taking you?</h2>
+      <p>
+        New platform for sharing travelling tips and tricks between adventurous
+        girls is coming up soon!
+      </p>
+    </section>
   </body>
 </html>
